@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nodeschool Istanbul</title>
+    <atom:link href="http://nodeshool.github.io/istanbul/feed.xml" rel="self" type="application/rss+xml"></atom:link>
+    <link>http://nodeshool.github.io/istanbul</link>
+    <description>Nodeshool.github.io/istanbul için generator</description>
+    <pubDate>Tue, 03 Nov 2015 23:30:00 +0200</pubDate>
+    <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
+    <language>en</language>
+    <item>
+      <title>Npm modulleri - Inquirerjs nedir?</title>
+      <link>http://nodeshool.github.io/istanbul/articles/npm-moduleri-inquirerjs-nedir/</link>
+      <pubDate>Tue, 03 Nov 2015 23:30:00 +0200</pubDate>
+      <guid isPermaLink="true">http://nodeshool.github.io/istanbul/articles/npm-moduleri-inquirerjs-nedir/</guid>
+      <author></author>
+      <description>&lt;p&gt;Yeoman ile proje oluşturduğumuzda ya da &lt;code&gt;npm init&lt;/code&gt; yaptığımızda karşımıza bazı sorular gelir. Inquirerjs’le tam olarak bunu yapcağız.&lt;/p&gt;
+&lt;p&gt;Kullanıcıya bazı sorular sorup cevaplarına göre işlem yapacağız.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a href=&quot;https://youtu.be/qGWs6qI4sw8&quot;&gt;&lt;img src=&quot;http://img.youtube.com/vi/qGWs6qI4sw8/0.jpg&quot; alt=&quot;Nodejs dersleri&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;package-json&quot;&gt;package.json&lt;/h3&gt;
+&lt;p&gt;Npm init ile başlıyoruz.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;npm init
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;package.json dosyamız oluştu.&lt;/p&gt;
+&lt;h3 id=&quot;index-js&quot;&gt;index.js&lt;/h3&gt;
+&lt;p&gt;Şimdi &lt;code&gt;index.js&lt;/code&gt; dosyası oluşturuyoruz.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/articles/npm-moduleri-inquirerjs-nedir/main.png&quot; alt=&quot;main.js&quot;&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;// inquirer modülünü çağırıyoruz
+var inquirer = require(&amp;#39;inquirer&amp;#39;);
+
+// gelen veriye göre bir dosya oluşturacağız bunun içinde `fs` modülünü kullanacağız.
+var fs = require(&amp;#39;fs&amp;#39;);
+
+// Sorularımızı oluşturuyoruz
+
+var  questions = [
+  {
+    type: &amp;quot;input&amp;quot;,
+    name: &amp;quot;name&amp;quot;,
+    message: &amp;quot;Project name?&amp;quot;
+  },
+  {
+    type: &amp;quot;list&amp;quot;,
+     name: &amp;quot;main&amp;quot;,
+     message: &amp;quot;Main file&amp;quot;,
+     choices: [ &amp;quot;app.js&amp;quot;, &amp;quot;app2.js&amp;quot;, &amp;quot;npm.js&amp;quot; ],
+  },
+  {
+      type: &amp;quot;password&amp;quot;,
+      name : &amp;#39;checkbox&amp;#39;,
+      message : &amp;#39;Password&amp;#39;
+  }
+];
+
+// şimdi inquirerjs&amp;#39;i çalıştırıyoruz
+
+
+
+inquirer.prompt(questions, function( answers ) {
+
+  // Eğer main dosyası var ise fs ile, seçilen dosyayı oluşturacağız
+  if(answers.main){
+
+      // @ oluşturulacak dosya
+      // @ dosyaya yazacağımız data
+      // @ işlem sonucu
+      fs.writeFile(answers.main, &amp;#39;var main =&amp;quot;&amp;quot;;&amp;#39;, function(){
+        console.log(&amp;#39;dosya yazıldı! Şimdi dizininizi kontrol edin&amp;#39;)
+      });
+  }
+  console.log(JSON.stringify(answers, null , &amp;#39; &amp;#39;));
+});
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Çıktı olarak console’a json datayı yazacak ve seçilen dosyayı dizin klasörüne oluşturacak.&lt;/p&gt;
+&lt;h3 id=&quot;okudu-unuz-i-in-te-ekk-r-ederim-&quot;&gt;Okuduğunuz için teşekkür ederim.&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/nodejs-dersleri&quot;&gt;Tüm Github repositorileri&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+</description>
+    </item>
+  </channel>
+</rss>
