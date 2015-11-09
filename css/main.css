@@ -111,7 +111,7 @@ li { display: list-item; }
 code{
   padding: 3px 5px;
   margin: 0;
-  background-color: rgba(0,0,0,0.04);
+  background-color: rgba(0,0,0,0.1);
   border-radius: 3px;
   font-size: 14px;
 }
@@ -256,7 +256,6 @@ main {
   float: right;
   min-height: 100%;
   position: relative;
-  padding-bottom: 290px
 }
 
 article,
@@ -444,9 +443,7 @@ background-color: rgba(0, 0, 0, 0.8);
 
 footer{
   width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+
   padding: 5% 10%;
   background:#edeff0;
   clear: both;
@@ -507,72 +504,6 @@ footer nav a::after{
   top:1px
 }
 
-/**
- * Mobile
- */
-
- @media screen and (max-width: 728px) {
-
-     main {
-       width: 100%
-     }
-
-     aside{
-       width: 100%;
-       position: relative;
-       height: 200px;
-       padding: 30px 7%;
-       background-position: 50% 50%;
-     }
-
-     aside canvas{
-       z-index: 1
-     }
-
-     aside h1,
-     aside p{
-       position: relative;
-       z-index: 10
-     }
-
-     article{
-       padding:5% 5% 0
-     }
-
-     h2{
-       font-size: 18px;
-     }
-
-     nav.pagination-post{
-       padding-left: 5%
-     }
-
-     footer{
-       text-align: center
-     }
-
-     .related .item{
-       width: 100%;
-       margin-bottom: 20px
-     }
-
- }
-
-
- @media screen and (min-width: 728px) and  ( max-width:960px) {
-    aside a {
-      width: 150px;
-      background-size: 150px;
-    }
-    article{
-      padding: 25px 10% 50px;
-    }
-
-    aside{
-      padding: 30px;
-    }
-
- }
 
 
 /**
@@ -633,6 +564,11 @@ footer nav a::after{
      box-shadow: inset 0 2px 4px rgba(0,0,0,0.15)
  }
 
+ .btn.outline{
+   background-color: transparent;
+   border:1px solid #222
+ }
+
 
 .subscribe-wrap{
   background-color: #fff
@@ -645,16 +581,20 @@ footer nav a::after{
 
 
 .subscribe{
-  margin-top: 40px
+  margin-top: 40px;
+  max-width: 700px
 }
 
 .subscribe label{
-  float: left;;
+  float: left;
   display: inline-block;
+  min-width: 35%;
+  margin-right: 2%
 }
 
 .subscribe input{
-  margin: 0 5px 5px 0
+  margin: 0 0 5px 0;
+  width: 100%
 }
 
 fieldset {
@@ -677,7 +617,7 @@ input[type="tel"],
 input[type="url"],
 select,
 textarea {
-  min-width: 250px;
+
   min-height: 34px;
   padding: 7px 8px;
   font-size: 14px;
@@ -884,4 +824,102 @@ input.input-large {
 }
 .term .chrome .button.min:hover{
   background:#e8a012;
+}
+
+
+
+
+
+
+/**
+ * Mobile
+ */
+
+ @media screen and (max-width: 728px) {
+
+     main {
+       width: 100%
+     }
+
+     aside{
+       width: 100%;
+       position: relative;
+       height: 200px;
+       padding: 30px 7%;
+       background-position: 50% 50%;
+     }
+
+     aside canvas{
+       z-index: 1
+     }
+
+     aside h1,
+     aside p{
+       position: relative;
+       z-index: 10
+     }
+
+     article{
+       padding:5% 5% 0
+     }
+
+     h2{
+       font-size: 18px;
+     }
+
+     nav.pagination-post{
+       padding-left: 5%
+     }
+
+     footer{
+       text-align: center
+     }
+
+     .related .item{
+       width: 100%;
+       margin-bottom: 20px
+     }
+
+     .credits {
+       display: block;
+       text-align: center;
+     }
+
+     .credits div {
+       width: 100%;
+       margin-bottom: 30px
+     }
+
+     .subscribe label{
+       width: 100%;
+       float: none
+     }
+
+     .term {
+       width: 100% !important;
+       float: none !important;
+     }
+ }
+
+
+ @media screen and (min-width: 728px) and  ( max-width:960px) {
+    aside a {
+      width: 150px;
+      background-size: 150px;
+    }
+    article{
+      padding: 25px 10% 50px;
+    }
+
+    aside{
+      padding: 30px;
+    }
+
+ }
+
+@media screen and  ( max-width:1200px) {
+  .term {
+    width: 100% !important;
+    float: none !important;
+  }
 }
