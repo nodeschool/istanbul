@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>NodeSchool Istanbul</title>
-    <atom:link href="http://nodeschool.io/istanbul/feed.xml" rel="self" type="application/rss+xml"></atom:link>
-    <link>http://nodeschool.io/istanbul</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"></atom:link>
+    <link></link>
     <description>nodeshool.io/istanbul static page generator</description>
-    <pubDate>Tue, 03 Nov 2015 23:30:00 +0200</pubDate>
+    <pubDate>Tue, 03 Nov 2015 23:30:00 +0300</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
     <item>
       <title>Npm modulleri - Inquirerjs nedir?</title>
-      <link>http://nodeschool.io/istanbul/articles/npm-moduleri-inquirerjs-nedir/</link>
-      <pubDate>Tue, 03 Nov 2015 23:30:00 +0200</pubDate>
-      <guid isPermaLink="true">http://nodeschool.io/istanbul/articles/npm-moduleri-inquirerjs-nedir/</guid>
+      <link>/articles/npm-moduleri-inquirerjs-nedir/</link>
+      <pubDate>Tue, 03 Nov 2015 23:30:00 +0300</pubDate>
+      <guid isPermaLink="true">/articles/npm-moduleri-inquirerjs-nedir/</guid>
       <author></author>
       <description>&lt;p&gt;Yeoman ile proje oluşturduğumuzda ya da &lt;code&gt;npm init&lt;/code&gt; yaptığımızda karşımıza bazı sorular gelir. Inquirerjs’le tam olarak bunu yapcağız.&lt;/p&gt;
 &lt;p&gt;Kullanıcıya bazı sorular sorup cevaplarına göre işlem yapacağız.&lt;/p&gt;

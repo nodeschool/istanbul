@@ -188,16 +188,17 @@ aside img{
 aside h1 {
   margin: 0;
   font-size: 24px;
+  text-align: center;
 }
 
 aside a {
-  width: 100%;
+  width: 80%;
   min-height: 300px;
   display: inline-block;
   color: #fff;
   text-decoration: none;
   text-indent: -99cm;
-  background: url('../images/logo.png') no-repeat 0 0;
+  background: url('../images/nodeschool-istanbul.svg') no-repeat 50% 0;
   background-size: 100%
 }
 
@@ -844,7 +845,7 @@ input.input-large {
      aside{
        width: 100%;
        position: relative;
-       height: 200px;
+       height: 250px;
        padding: 30px 7%;
        background-position: 50% 50%;
      }
@@ -898,6 +899,12 @@ input.input-large {
      .term {
        width: 100% !important;
        float: none !important;
+     }
+
+     aside a {
+       width: 150px;
+       opacity: .8;
+       min-height: 200px;
      }
  }
 
