@@ -199,7 +199,7 @@ aside a {
   text-decoration: none;
   text-indent: -99cm;
   background: url('../images/nodeschool-istanbul.svg') no-repeat 50% 0;
-  background-size: 100%
+  background-size: contain;
 }
 
 aside p {
