@@ -279,6 +279,32 @@ header{
   vertical-align: text-top;
 }
 
+.event .btn .octicon {
+  font-size: 16px;
+  margin: 0 10px 0 0 ;
+  vertical-align: top
+}
+
+.event .btn{
+  margin-right: 10px
+}
+
+.event ul {
+    list-style-position: inside;
+    list-style-image: url(../images/bullet.png);
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.event ul ul{
+  padding:5px 0 5px 20px
+}
+
+.event-content {
+  padding-top: 40px
+}
+
 .markdown-body{
   padding-bottom: 200px
 }
@@ -470,6 +496,26 @@ footer{
   flex-direction:         row;
 }
 
+.credits div.sponsor {
+  width: 50% !important;
+}
+
+.credits div.sponsor a {
+  border: 0
+}
+
+.credits div.sponsor p{
+  display:block;
+  margin: 10px 0 ;
+  padding-bottom: 0;
+  color:#555;
+  font-size: 13px
+}
+
+div.sponsor .hotelrunner img{
+    width: 100px
+}
+
 .credits ul{
   margin: 0;
   padding: 0;
@@ -478,7 +524,7 @@ footer{
 }
 
 .credits .sponsor img{
-  width: 140px
+
 }
 
 footer nav{
@@ -714,7 +760,13 @@ input.input-large {
 
 
 
+.meetup{
+  text-align: center;
+}
 
+.meetup a {
+  border: 0
+}
 
 .terms{
   border-bottom: 1px solid #eee
