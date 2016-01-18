@@ -5,7 +5,7 @@
 NodeSchool, Nodejs ve Javascript öğrenmenize yardımcı olan bir atölyedir.
 
 ##İletişim ve daha fazla bilgi için
-Daha fazla bilgi için sorularınızı [@nodejsdersleri](http://twitter.com/nodejsdersleri) ya da gitter üzerinden sorabilirsiniz.
+Daha fazla bilgi için sorularınızı [@nodeschool_ist](https://twitter.com/nodeschool_ist) ya da gitter üzerinden sorabilirsiniz.
 
 
 ## Web sitemize katkıda bulunmak için
