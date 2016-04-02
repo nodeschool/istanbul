@@ -488,16 +488,19 @@ footer{
   text-align: left;
   margin-bottom: 40px;
   display: flex;
+  padding-bottom: 40px;
+  border-bottom:1px solid #D8D8D8
 }
 
 .credits div {
-  width: 25%;
+  width: 50%;
   -webkit-flex-direction: row; /* Safari */
   flex-direction:         row;
 }
 
-.credits div.sponsor {
-  width: 50% !important;
+.sponsor {
+  width: 100% !important;
+  margin: 40px 0
 }
 
 .credits div.sponsor a {
@@ -764,8 +767,8 @@ input.input-large {
   text-align: center;
 }
 
-.meetup a {
-  border: 0
+.meetup div{
+  margin: auto;
 }
 
 .terms{
