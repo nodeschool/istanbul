@@ -1,10 +1,11 @@
 <img src='http://nodeschool.io/images/nodeschool-istanbul.svg' width='200' align='right'>
+
 # NodeSchool Istanbul 
 
 
 NodeSchool, Nodejs ve Javascript öğrenmenize yardımcı olan bir atölyedir.
 
-##İletişim ve daha fazla bilgi için
+## İletişim ve daha fazla bilgi için
 Daha fazla bilgi için sorularınızı [@nodeschool_ist](https://twitter.com/nodeschool_ist) ya da gitter üzerinden sorabilirsiniz.
 
 
